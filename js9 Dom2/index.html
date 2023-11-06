@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: flex;
+        }
+        span{
+            display: inline-block;
+        }
+        .elaveEt, .elaveEtme{
+            cursor: pointer;
+            width: 30px ;
+            color: white;
+            padding: 2px;
+
+        }
+         .elaveEt{
+            background-color: green;
+         }
+         .elaveEtme{
+            background-color: red;
+         }
+    </style>
+</head>
+<body>
+    <!--  task1 -->
+    <!-- <form  >
+        <input id="ad" type="text" name="ad" required>
+        <input id="soyad" type="text" name="soyad" required>
+        <input id="email" type="email" name="" id="" name="email" required>
+        <button type="submit">Daxil et</button>
+    </form> -->
+    <!--  task2 -->
+
+    <header> <span> Total: <span class="total">0</span></span> </header>
+    <div class="cont">
+
+        <div  class="mehsul" style="width: 18rem;">
+            <img src="https://bellissa.az/wp-content/uploads/2021/08/Vintage-divan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Divan</p>
+                    <p>Qiymet: <span class="qiymet">1000</span></p>
+                     <div><span class="elaveEt">+</span> <span class="elaveEtme">-</span> Eded <span
+                             class="eded">0</span></div>
+            </div>
+           
+        </div>
+        <div class="mehsul" style="width: 18rem;">
+            <img src="https://strgimgr.umico.az/sized/840/55331-07513a2eeca5cde954fd5ce9d60772e5.jpg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <p class="card-text">Stol</p>
+                    <p>Qiymet: <span class="qiymet">500</span></p>
+                     <div><span class="elaveEt">+</span> <span class="elaveEtme">-</span> Eded  <span class="eded">0</span></div>
+            </div>
+           
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
