@@ -20,20 +20,21 @@
 
 //...Bir məhsul kartı yaradın və məhsulun sayını artırdıqca qiymətini artıran, azaltdıqda isə azaldan funksiya yazın.
 const mehsullar = document.querySelectorAll('.mehsul');
-
 const total = document.querySelector('.total');
+let num = 0; 
+
 mehsullar.forEach((mehsul, index) => {
     const qiymet = mehsul.querySelector('.qiymet');
     const elaveEt = mehsul.querySelector('.elaveEt');
     const elaveEtme = mehsul.querySelector('.elaveEtme');
     const eded = mehsul.querySelector('.eded');
 
-    let num = 0;
     let say = 0;
 
     elaveEt.addEventListener('click', () => {
         num += +qiymet.innerHTML;
-        total.innerHTML = num;
+        total.innerHTML = +num;
+        console.log(total.textContent);
         say++;
         eded.innerHTML = say;
     });
@@ -41,7 +42,7 @@ mehsullar.forEach((mehsul, index) => {
     elaveEtme.addEventListener('click', () => {
         if (say > 0) {
             num -= +qiymet.innerHTML;
-            total.innerHTML = num;
+            total.innerHTML = +num;
             say--;
             eded.innerHTML = say;
         }
