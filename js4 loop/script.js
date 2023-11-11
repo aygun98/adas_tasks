@@ -40,6 +40,13 @@
 
 
 // }
+//. diger 
+// for (const key in oby) {
+//     if (oby.hasOwnProperty(key)) {
+//         console.log(oby[key]);
+
+//     }
+// }
 
 //................... Bir array-dəki cüt indeksli elementlərin cəmini hesablamaq üçün bir dövr yazın.
 
