@@ -1,0 +1,72 @@
+/* 
+                      < !-- Accordion menu yazın. -->
+nav {
+    padding: 50px;
+
+}
+
+nav ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.accardion {
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    width: 200px;
+    border-bottom: none;
+}
+
+.hover-accardion {
+    display: none;
+}
+
+.hover-accardion.active {
+    display: block;
+}
+
+.accardion-basliq {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 20px;
+}
+
+.hover-accardion li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 20px;
+}
+
+.fa-caret-up.aktive {
+    transform: rotate(180deg);
+} */
+
+
+                     /* < !-- Custom (fərdi) select-option yazın. --> */
+.box{
+ width: 400px;
+ /* height: max-content; */
+ color: #fff;
+}
+
+ .basliq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 10px;
+    /* height: 100%; */
+    border: 1px solid rgba(0, 0, 0, 0.219);
+}
+ .movzu{
+ display: none;
+ /* visibility: hidden; */
+ color: black;
+
+ }
+.movzu.active{
+    display: inline-block;
+}
