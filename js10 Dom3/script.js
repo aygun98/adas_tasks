@@ -13,46 +13,63 @@
 
     //                 <!-- Custom (fərdi) select-option yazın. --> 
 
-    const boxes = document.querySelectorAll('.box')
-    console.log(boxes);
+    // const boxes = document.querySelectorAll('.box')
+    // console.log(boxes);
 
-    boxes.forEach((box, ind1) => {
+    // boxes.forEach((box, ind1) => {
 
-        box.addEventListener('click', (e) => {
+    //     box.addEventListener('click', (e) => {
 
            
-            const kliklediyimElement = e.target
-            if (kliklediyimElement.classList.contains('basliq')) {
-                kliklediyimElement.nextElementSibling.classList.toggle('active')
+    //         const kliklediyimElement = e.target
+    //         if (kliklediyimElement.classList.contains('basliq')) {
+    //             kliklediyimElement.nextElementSibling.classList.toggle('active')
                 
-            }
+    //         }
            
-            boxes.forEach((box2, ind2) => {
-                const movzu = box2.querySelector('.movzu')
-                console.log(movzu);
-                 if (ind1 != ind2) {
-                    movzu.classList.remove('active')
-                 }
-            })
-        })
-
-    })
-
-
-
-
-
-
-
-
-    // for (let i = 0; i < basliq.length; i++) {
-
-
-    //     basliq[i].addEventListener('click', (e) => {
-
-
-    //         // const movzu = this
-    //         console.log(this);
-
+    //         boxes.forEach((box2, ind2) => {
+    //             const movzu = box2.querySelector('.movzu')
+    //             console.log(movzu);
+    //              if (ind1 != ind2) {
+    //                 movzu.classList.remove('active')
+    //              }
+    //         })
     //     })
-    // }
+
+    // })
+
+
+
+        //   <!-- Custom (fərdi) Slider yazın.  -->
+
+const  slides =  document.querySelectorAll('.slide')
+const evvel = document.querySelector('.evvel')
+const sonra = document.querySelector('.sonra')
+let count = 0
+
+
+slides.forEach((slide, index)=>{
+    slide.style.left = ` ${index * 100}%`
+})
+
+evvel.addEventListener('click',()=>{
+
+    count--
+    
+    sliderImg()
+})
+sonra.addEventListener('click',()=>{
+
+   
+    count++
+   
+    sliderImg()
+})
+
+
+
+const sliderImg =()=>{
+    slides.forEach((slide)=>{
+       slide.style.transform = `translateX(-${count * 100}%)`
+    })
+}
