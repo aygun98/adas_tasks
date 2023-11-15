@@ -45,6 +45,8 @@
 const  slides =  document.querySelectorAll('.slide')
 const evvel = document.querySelector('.evvel')
 const sonra = document.querySelector('.sonra')
+const sayi =slides.length
+console.log(sayi);
 let count = 0
 
 
@@ -53,15 +55,15 @@ slides.forEach((slide, index)=>{
 })
 
 evvel.addEventListener('click',()=>{
-
-    count--
+ 
+    count = Math.max(count - 1, 0);
     
     sliderImg()
 })
 sonra.addEventListener('click',()=>{
 
    
-    count++
+    count = Math.min(count + 1, sayi - 1);
    
     sliderImg()
 })
@@ -70,6 +72,9 @@ sonra.addEventListener('click',()=>{
 
 const sliderImg =()=>{
     slides.forEach((slide)=>{
-       slide.style.transform = `translateX(-${count * 100}%)`
+
+    
+    slide.style.transform = `translateX(-${count * 100}%)` 
+
     })
 }
