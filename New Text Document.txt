@@ -1,0 +1,66 @@
+:js2 funk
+1)Bir object yaradın və həm swicth-case, həm də if-else ilə objectin hər hansı key-ni yoxlayan funksiya yazın.
+2)Bir array və bir dəyişən yaradın. Dəyişənin verilən array-a daxil olub olmadığını yoxlayıb daxildirsə, həmin elementin index-ni, daxil deyilsə false qaytaran funksiya yazın.
+3)Verilmiş dəyişəni array əlavə edən funksiya yazın. Əgər həmin element array-da varsa, dəyişən array-a əlavə olunmasın.
+4)İstifadəçidən məlumatları götürüb verilmiş objectə əlavə edən funksiya yazın: {ad: “Ad1”, soyad: “Soyad1”, yas: yas1, email: “email@mail.com”}
+5)Bir object yaradın və bu objectə yeni key əlavə edən funsiya yazın.
+
+
+:js3 loop
+1)for və while-dan istifadə edərək 1-dən 100-ə qədər ədədləri consola yazdırın.
+2)Bir [2, 4, 6, 8, 10] rəqəmlərdən ibarət array-imiz var. For döngüsündən (loop-dan) istifadə edərək bütün elementlərini 3 dəfə artırıb yazdırın.
+3)Ədədlərdən ibarət bir array yaradın. For döngüsündən istifadə eliyərək həmin array-in ən böyük ədədini tapın.
+4)Ədədlərdən ibarət array-imiz var: const numbers = [1, 2, 3, 4, 5, 6]. Array-dəki rəqəmlərin cəmini tapın.
+5)Bir funksiya yazın, parametr olaraq array qəbul etsin.
+  Array stringlərdən ibarət olacaq (Məs: ["apple", "banana", "cherry", "date"]). 
+  Array-in içindəki ən uzun sözü tapın.
+6)const students = [ { name: "Alice", grade: 90 }, 
+                     { name: "Bob", grade: 85 },
+                     { name: "Charlie", grade: 92 }] 
+7)Array və içində object-lər verilmişdir tələbələrin ortalama qiymətini tapın.
+
+
+
+
+:js4 loop
+1)Bir array-dəki ən böyük ədədi tapmaq üçün bir dövr (loop) yazın.
+2)İki array-i bir-birinə birləşdirmək üçün JavaScript dövr (loop) istifadə etmək.
+3)Bir obyektin bütün açar sözlərini və qiymətlərini console-a çap etmək üçün bir dövr yazın.
+4)Bir array-dəki təkrarlanan elementləri tapmaq üçün dövr istifadə etmək.
+5)Bir array-dəki cüt indeksli elementlərin cəmini hesablamaq üçün bir dövr yazın.
+6)Bir string-dəki hərflərin sayını hesablamaq üçün bir dövr yazın.
+7)Bir array-dəki elementlərin tək və cüt indeksli olanları ayrı-ayrı ayrı array-lərə bölmək üçün bir dövr yazın.
+8)İki array-də eyni elementləri tapmaq və onları yeni bir array-də toplamaq üçün bir dövr yazın.
+9)Bir array-dəki bütün elementləri əksinə çevirmək üçün bir dövr yazın.
+10)Bir array-dəki elementlərin sayını və onların cəmini hesablamaq üçün bir dövr yazın.
+\
+
+:js5 spread operator
+1)Bir sıra rəqəmi təmsil edən bir array yaradın. Sonra bu arrayi destructuring istifadə edərək ayrı-ayrı dəyişənlərə bölün və onları konsola yazdırın.(Funksiya ilə yazin)
+2)İki dərəcəli (nested) bir obyekt yaradın və bu obyektin içində olan məlumatları götürən və keylərini dəyişən funksiya yazın .
+3)Bir object yaradın və onu başqa bir object-ə kopyalayın. Əsas objecti deyişib copy olan objecti olduğu kimi saxlayın. (Funksiya ilə yazin)
+4)Bir obyekt yaradın və spread operator istifadə edərək bir neçə key-i silin. Sonra yeni obyekti konsola çap edin ki, silinmiş key-lərin olmadığını yoxlasın. (Funksiya ilə yazin)
+
+
+:js6 sting metodlari
+1)Bir string təyin edin (Məs: “Big Ben”). Bu string-də olan böyük hərflərin sayını tapın.
+2)Verilən stringin palindrom (məsələn, qaçaq=>qaçaq, ata=>ata) olub-olmamasını yoxlayan funksiya yazın.
+3)Hərf və rəqəmlərdən ibarət stringdə (məs, “abc123”) rəqəmlərin cəmini tapan funksiya yazın.
+4)Kebab-case formatında mətni parametr  kimi qəbul edən və onu UPPER_CASE mətninə çevirən kebabToUpper funksiyasını yazın.
+5)Bir stringdəki sözlərin yerlərini tərsinə çevirən funksiya yazın.
+
+:js8 Dom
+1)İnputdan istifadəçi məlumatlarını götürüb ekrana yazdıran funksiya yazın.
+2) Bir plus, bir minus button və bir p teqi içində rəqəm var, plus-a click-lədikdə bu rəqəmi artıran, mənfiyə click-lədikdə azaldan funksiya yazın.
+3) Clicklədikdə müəyyən vaxtdan sonra ekrana 'Hello World!', 'How are you?' sözlərini bir-birini bir neçə dəfə əvəz etməklə yazdıran və müəyyən vaxtdan sonra dayanan funksiya yazın.
+4) Digital saat yazın.
+5) İki type number olan input, bir riyazi əməlləri qəbul edən (+, -,*,/) select-option və bir buttondan ibarət kalkulyator yazın.
+
+
+:js9 Dom
+1)Form yaradıb istifadəçi məlumatlarını obyekt şəklində götürən və console-da göstərən funksiya yazın.
+2)Bir məhsul kartı yaradın və məhsulun sayını artırdıqca qiymətini artıran, azaltdıqda isə azaldan funksiya yazın.
+
+:js10 DomAccordion menu yazın.
+1)Custom (fərdi) select-option yazın.  (1 və 2ci taskları aşağıdakı figmaya əsasən yazın: https://www.figma.com/file/Kon0zBjFuCeQaP5EEsS3OA/unknown-(Copy)?type=design&node-id=897-17894&mode=design&t=A1qMRPTJH5b7VAgA-0 )
+2)Custom (fərdi) Slider yazın. 

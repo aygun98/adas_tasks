@@ -165,4 +165,28 @@
 // console.log(ters);
 
 
+//............Bir array-dəki elementlərin sayını və onların cəmini hesablamaq üçün bir dövr yazın.
+// let myArray = [1, 2, 3, 4, 5];
+
+
+// function calculateArrayStats(arr) {
+//     let count = 0;
+//     let sum = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         count++;
+//         sum += arr[i];
+//     }
+
+//     return {
+//         count,
+//         sum
+//     };
+// }
+
+// // Nümunənin sınanması
+// let arrayStats = calculateArrayStats(myArray);
+// console.log("Element sayı:", arrayStats.count); // Element sayı: 5
+// console.log("Element cəmi:", arrayStats.sum); // Element cəmi: 15
+
 

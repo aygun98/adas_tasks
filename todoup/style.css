@@ -1,0 +1,123 @@
+:root{
+    --color1:#C4C4C4;
+    --color2:#FFDC40;
+    --color3:#833AE0;
+
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    padding: 0;
+    margin: 0;
+   padding: 10px 0 5px 10px;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 336px;
+    border: 1px solid var(--color1) ;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* padding:0 20px  ; */
+    padding-bottom: 20px;
+}
+.header {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--color2);
+    height: 40px;
+   border-top-right-radius:10px ;
+   border-top-left-radius: 10px;
+}
+h1{
+    text-transform: capitalize;
+   
+}
+.img-icon{
+    align-self: flex-end;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 0 25px;
+}
+.input-box{
+    width: 100%;
+    position: relative;
+    /* padding: 10px; */
+}
+.input-contain{
+    border: 1px solid var(--color1);
+    width: 100%;
+
+    border-radius: 10px;
+}
+input{
+    padding: 10px 0 5px 10px;
+    
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.cross-icon {
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    color: var(--color1);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/* .input-cross {
+    display: inline-block;} */
+
+button{
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.add-button {
+    padding: 0;
+    padding-right:20px ;
+    background-color: var(--color3);
+    color: white;
+    /* width: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* padding: 0; */
+    gap: 10px;
+}
+.add-button>.add-icon {
+    background-color: #ffffff33;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    
+    padding: 13px 16px;
+    border-radius: 50px;
+}
+.todo-cross{
+    display: inline-block;
+}
+.bagla{
+    display: none;
+}
