@@ -9,26 +9,25 @@ const form = document.querySelector('form');
 
 
 
-localStorage.clear()
 
-document.addEventListener('DOMContentLoaded', () => {
-  const savedTodos = localStorage.getItem("todos");
-  if (savedTodos) {
-    container.innerText = savedTodos;
-  }
-
-});
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   if (inputWrite.value.trim()) {
-    const deyer = inputWrite.value;
+    const deger = inputWrite.value;
+
+
+    const uniqueKey = `key_${new Date().getTime()}`;
+
+
+    localStorage.setItem(uniqueKey, deger);
+
     const box = document.createElement('div');
     box.className = 'input-box';
 
     const p = document.createElement('p');
     p.className = 'p-text'
-    p.innerText = deyer;
+    p.innerText = localStorage.getItem(uniqueKey);
 
     const xbtn = document.createElement('button');
     xbtn.className = 'cross-icon qutu-sil todo-cross';
@@ -42,6 +41,8 @@ form.addEventListener('submit', (e) => {
 
       if (xbtn.classList.contains('qutu-sil')) {
         box.classList.add('bagla');
+
+        localStorage.removeItem(uniqueKey);
       }
     });
 
@@ -50,23 +51,13 @@ form.addEventListener('submit', (e) => {
 
     container.appendChild(box);
 
-   
-    saveToLocalStorage();
-
     inputWrite.value = '';
     crossBtn.style.display = 'none';
   }
 });
 
 
-function saveToLocalStorage() {
- 
-  const todoList = document.querySelector('.todo');
-  const todos = Array.from(todoList.children);
 
- 
-  localStorage.setItem("todos", todoList.innerText);
-}
 
 function sortla() {
   const todoList = document.querySelector('.todo');
@@ -82,7 +73,7 @@ function sortla() {
   todoItems.forEach(item => todoList.appendChild(item));
 
   
-  saveToLocalStorage();
+ 
 }
 
 inputWrite.addEventListener('input', iconshow);
@@ -100,12 +91,12 @@ function iconshow() {
     crossBtn.style.display = 'none';
 
    
-    saveToLocalStorage();
+   
   });
 }
 
 
 sorted.addEventListener('click', sortla);
 
-// localStorage.clear()
+
 
